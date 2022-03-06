@@ -64,9 +64,11 @@ export default function Contact() {
 
                     {/* Start of inputs */}
                     <div>
-                        <form action="" method="POST" data-netlify="true" className="form grid grid-cols-1 gap-y-6 sm:grid-cols-2 sm:gap-x-8">
+                        <form name="contact" method="POST" className="grid grid-cols-1 gap-y-6 sm:grid-cols-2 sm:gap-x-8">
+                            <input type="hidden" name="form-name" value="contact" />
                             {/* First Name */}
                             <div>
+                                <input type="hidden" name="form-name" value="contact" />
                                 <label htmlFor="first-name" className="block text-sm font-medium text-gray-700">
                                     First name
                                 </label>
