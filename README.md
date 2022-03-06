@@ -6,7 +6,7 @@
 
 This is my porfolio repository. [React](https://reactjs.org/) and [TailwindCSS](https://tailwindcss.com/) were used to create this site. 
 
-It is deployed using [Netlify](https://www.netlify.com/) at [EdytaTarczynski.com](https://www.edytatarczynskicom/)
+It is deployed using [Netlify](https://www.netlify.com/) at [EdytaTarczynski.com](https://www.edytatarczynski.com/)
   
 
   &nbsp;
