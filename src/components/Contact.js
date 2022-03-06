@@ -2,9 +2,8 @@ import { useState } from 'react'
 
 
 export default function Contact() {
-    const [agreed, setAgreed] = useState(false)
     return (
-        <div>
+        <div id="contact">
             {/* Contact Header */}
             <div className="bg-white max-w-7xl mx-auto pt-10 px-4 sm:py-25 sm:px-6 lg:px-8 mt-7">
                 <div className="text-center">

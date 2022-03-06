@@ -22,7 +22,7 @@ export default function About() {
   return (
     <>
       {/* About header */}
-      <div>
+      <div id="about">
         <div className="bg-white max-w-7xl mx-auto py-10 px-4 sm:py-25 sm:px-6 lg:px-8">
           <div className="text-center">
             <h2 className="text-base font-semibold text-indigo-600 tracking-wide uppercase">1.</h2>

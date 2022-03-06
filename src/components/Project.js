@@ -34,7 +34,7 @@ const projects = [
 
 export default function Project() {
     return (
-        <div>
+        <div id="projects">
             {/* Project Header */}
             <div>
                 <div className="bg-transparent max-w-7xl mx-auto py-10 px-4 sm:py-25 sm:px-6 lg:px-8">

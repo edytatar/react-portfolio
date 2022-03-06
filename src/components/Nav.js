@@ -1,4 +1,4 @@
-
+import { Link } from 'react-scroll'
 import { Fragment } from 'react'
 import { Popover, Transition } from '@headlessui/react'
 import {
@@ -14,13 +14,14 @@ export default function Nav() {
                 <div className="flex justify-between items-center border-b-2 border-gray-100 py-6 space-between md:space-x-10">
 
                     <div className="flex justify-start lg:w-0 lg:flex-1">
-                        <a href="#">
+                        <a href="#"><Link to="home" spy={true} smooth={true}>
                             <span className="sr-only">Logo</span>
                             <img
                                 className="h-12 w-auto sm:h-20"
                                 src="https://user-images.githubusercontent.com/87889660/156454571-818bdf9d-19da-41e4-9c6e-f943ceb60ce9.svg"
                                 alt="Edyta's logo"
                             />
+                        </Link>
                         </a>
                     </div>
 
@@ -34,15 +35,18 @@ export default function Nav() {
 
                     {/* Nav Links */}
                     <Popover.Group as="nav" className="hidden flex md:flex space-x-10">
-                        <a href="#" className="text-lg lg:text-2xl font-medium text-gray-500 hover:text-gray-900">
+                        <a href="#" className="text-lg lg:text-2xl font-medium text-gray-500 hover:text-gray-900"><Link to="about" spy={true} smooth={true}>
                             About
+                        </Link>
                         </a>
-                        <a href="#" className="text-lg lg:text-2xl font-medium text-gray-500 hover:text-gray-900">
+                        <a href="#" className="text-lg lg:text-2xl font-medium text-gray-500 hover:text-gray-900"><Link to="projects" spy={true} smooth={true}>
                             Projects
+                        </Link>
                         </a>
-                       
-                        <a href="#" className="text-lg lg:text-2xl font-medium text-gray-500 hover:text-gray-900">
+
+                        <a href="#" className="text-lg lg:text-2xl font-medium text-gray-500 hover:text-gray-900"><Link to="contact" spy={true} smooth={true}>
                             Contact
+                        </Link>
                         </a>
 
                         <a href="https://drive.google.com/file/d/1huJkUqRuymolZx5MM0GxECV45yNlGGoh/view?usp=sharing" target="_blank" className="text-lg lg:text-2xl font-medium text-gray-500 hover:text-gray-900">
@@ -90,16 +94,19 @@ export default function Nav() {
                         {/* Nav links inside hamburger */}
                         <div className="py-6 px-5 space-y-6">
                             <div className="grid grid-cols-2 gap-y-4 gap-x-8">
-                                <a href="#" className="text-base font-medium text-gray-900 hover:text-gray-700">
+                                <a href="#" className="text-base font-medium text-gray-900 hover:text-gray-700"><Link to="about" spy={true} smooth={true}>
                                     About
+                                </Link>
                                 </a>
 
-                                <a href="#" className="text-base font-medium text-gray-900 hover:text-gray-700">
+                                <a href="#" className="text-base font-medium text-gray-900 hover:text-gray-700"><Link to="projects" spy={true} smooth={true}>
                                     Projects
+                                </Link>
                                 </a>
 
-                                <a href="#" className="text-base font-medium text-gray-900 hover:text-gray-700">
+                                <a href="#" className="text-base font-medium text-gray-900 hover:text-gray-700"><Link to="contact" spy={true} smooth={true}>
                                     Contact
+                                </Link>
                                 </a>
 
                                 <a href="https://drive.google.com/file/d/1huJkUqRuymolZx5MM0GxECV45yNlGGoh/view?usp=sharing" className="text-base font-medium text-gray-900 hover:text-gray-700">
