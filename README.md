@@ -1,0 +1,1 @@
+[![Netlify Status](https://api.netlify.com/api/v1/badges/c6d9edcd-96b7-430a-b32e-7ae68a74bb5a/deploy-status)](https://app.netlify.com/sites/tender-yonath-5c0434/deploys)
