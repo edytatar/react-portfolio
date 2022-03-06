@@ -62,12 +62,12 @@ export default function Project() {
                         </div>
                         <div className="flex-1 flex justify-evenly">
                             <span className="text-lg font-medium text-indigo-600">
-                                <a href={project.links.href[0]} className="hover:underline" target="_blank">
+                                <a href={project.links.href[0]} rel="noreferrer" className="hover:underline" target="_blank">
                                     {project.links.name[0]}
                                 </a>
                             </span>
                             <span className="text-lg font-medium text-indigo-600">
-                                <a href={project.links.href[1]} className="hover:underline" target="_blank">
+                                <a href={project.links.href[1]} rel="noreferrer" className="hover:underline" target="_blank">
                                     {project.links.name[1]}
                                 </a>
                             </span>
