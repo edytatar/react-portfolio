@@ -35,21 +35,21 @@ export default function Nav() {
 
                     {/* Nav Links */}
                     <Popover.Group as="nav" className="hidden flex md:flex space-x-10">
-                        <a href="#" className="text-lg lg:text-2xl font-medium text-gray-500 hover:text-gray-900"><Link to="about" spy={true} smooth={true}>
+                        <button className="text-lg lg:text-2xl font-medium text-gray-500 hover:text-gray-900"><Link to="about" spy={true} smooth={true}>
                             About
                         </Link>
-                        </a>
-                        <a href="#" className="text-lg lg:text-2xl font-medium text-gray-500 hover:text-gray-900"><Link to="projects" spy={true} smooth={true}>
+                        </button>
+                        <button className="text-lg lg:text-2xl font-medium text-gray-500 hover:text-gray-900"><Link to="projects" spy={true} smooth={true}>
                             Projects
                         </Link>
-                        </a>
+                        </button>
 
-                        <a href="#" className="text-lg lg:text-2xl font-medium text-gray-500 hover:text-gray-900"><Link to="contact" spy={true} smooth={true}>
+                        <button className="text-lg lg:text-2xl font-medium text-gray-500 hover:text-gray-900"><Link to="contact" spy={true} smooth={true}>
                             Contact
                         </Link>
-                        </a>
+                        </button>
 
-                        <a href="https://drive.google.com/file/d/1huJkUqRuymolZx5MM0GxECV45yNlGGoh/view?usp=sharing" target="_blank" className="text-lg lg:text-2xl font-medium text-gray-500 hover:text-gray-900">
+                        <a href="https://drive.google.com/file/d/1huJkUqRuymolZx5MM0GxECV45yNlGGoh/view?usp=sharing" rel="noreferrer" target="_blank" className="text-lg lg:text-2xl font-medium text-gray-500 hover:text-gray-900">
                             Resume
                         </a>
                     </Popover.Group>
@@ -94,22 +94,22 @@ export default function Nav() {
                         {/* Nav links inside hamburger */}
                         <div className="py-6 px-5 space-y-6">
                             <div className="grid grid-cols-2 gap-y-4 gap-x-8">
-                                <a href="#" className="text-base font-medium text-gray-900 hover:text-gray-700"><Link to="about" spy={true} smooth={true}>
+                                <button className="text-base font-medium text-gray-900 hover:text-gray-700"><Link to="about" spy={true} smooth={true}>
                                     About
                                 </Link>
-                                </a>
+                                </button>
 
-                                <a href="#" className="text-base font-medium text-gray-900 hover:text-gray-700"><Link to="projects" spy={true} smooth={true}>
+                                <button className="text-base font-medium text-gray-900 hover:text-gray-700"><Link to="projects" spy={true} smooth={true}>
                                     Projects
                                 </Link>
-                                </a>
+                                </button>
 
-                                <a href="#" className="text-base font-medium text-gray-900 hover:text-gray-700"><Link to="contact" spy={true} smooth={true}>
+                                <button className="text-base font-medium text-gray-900 hover:text-gray-700"><Link to="contact" spy={true} smooth={true}>
                                     Contact
                                 </Link>
-                                </a>
+                                </button>
 
-                                <a href="https://drive.google.com/file/d/1huJkUqRuymolZx5MM0GxECV45yNlGGoh/view?usp=sharing" className="text-base font-medium text-gray-900 hover:text-gray-700">
+                                <a href="https://drive.google.com/file/d/1huJkUqRuymolZx5MM0GxECV45yNlGGoh/view?usp=sharing" rel="noreferrer" className="text-base font-medium text-gray-900 hover:text-gray-700">
                                     Resume
                                 </a>
                             </div>
