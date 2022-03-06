@@ -14,7 +14,7 @@ export default function Nav() {
                 <div className="flex justify-between items-center border-b-2 border-gray-100 py-6 space-between md:space-x-10">
 
                     <div className="flex justify-start lg:w-0 lg:flex-1">
-                        <a href="#"><Link to="home" spy={true} smooth={true}>
+                        <button href="#"><Link to="home" spy={true} smooth={true}>
                             <span className="sr-only">Logo</span>
                             <img
                                 className="h-12 w-auto sm:h-20"
@@ -22,7 +22,7 @@ export default function Nav() {
                                 alt="Edyta's logo"
                             />
                         </Link>
-                        </a>
+                        </button>
                     </div>
 
                     {/* Responsive Hamburger */}
