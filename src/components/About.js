@@ -79,6 +79,7 @@ export default function About() {
           </div>
 
           <div className="relative mx-auto max-w-md px-4 sm:max-w-3xl sm:px-6 lg:px-0">
+           
             {/* Content area */}
             <div className="pt-12 sm:pt-16 lg:pt-20">
               <h2 className="text-3xl text-gray-900 font-extrabold tracking-tight sm:text-4xl">
@@ -104,11 +105,9 @@ export default function About() {
                     className="relative rounded-lg border border-gray-300 bg-white px-6 py-5 shadow-sm flex items-center space-x-3 hover:border-gray-400 focus-within:ring-2 focus-within:ring-offset-2 focus-within:ring-indigo-500"
                   >
                     <div className="flex-1 min-w-0">
-                      <a href="" className="focus:outline-none">
                         <span className="absolute inset-0" aria-hidden="true" />
                         <p className="text-sm font-medium text-gray-900">{technology.name}</p>
                         <p className="text-sm text-gray-500 truncate">{technology.role}</p>
-                      </a>
                     </div>
                   </div>
                 ))}
