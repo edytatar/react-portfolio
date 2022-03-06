@@ -66,7 +66,7 @@ export default function Contact() {
 
                     {/* Start of inputs */}
                     <div>
-                        <form action="https://formsubmit.co/edytatar@gmail.com" method="POST" className="form grid grid-cols-1 gap-y-6 sm:grid-cols-2 sm:gap-x-8">
+                        <form action="" method="POST" data-netlify="true" className="form grid grid-cols-1 gap-y-6 sm:grid-cols-2 sm:gap-x-8">
                             {/* First Name */}
                             <div>
                                 <label htmlFor="first-name" className="block text-sm font-medium text-gray-700">
