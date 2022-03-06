@@ -40,11 +40,13 @@ export default function Nav() {
                         <a href="#" className="text-lg lg:text-2xl font-medium text-gray-500 hover:text-gray-900">
                             Projects
                         </a>
-                        <a href="#" className="text-lg lg:text-2xl font-medium text-gray-500 hover:text-gray-900">
-                            Resume
-                        </a>
+                       
                         <a href="#" className="text-lg lg:text-2xl font-medium text-gray-500 hover:text-gray-900">
                             Contact
+                        </a>
+
+                        <a href="https://drive.google.com/file/d/1huJkUqRuymolZx5MM0GxECV45yNlGGoh/view?usp=sharing" target="_blank" className="text-lg lg:text-2xl font-medium text-gray-500 hover:text-gray-900">
+                            Resume
                         </a>
                     </Popover.Group>
                 </div>
@@ -97,11 +99,11 @@ export default function Nav() {
                                 </a>
 
                                 <a href="#" className="text-base font-medium text-gray-900 hover:text-gray-700">
-                                    Resume
+                                    Contact
                                 </a>
 
-                                <a href="#" className="text-base font-medium text-gray-900 hover:text-gray-700">
-                                    Contact
+                                <a href="https://drive.google.com/file/d/1huJkUqRuymolZx5MM0GxECV45yNlGGoh/view?usp=sharing" className="text-base font-medium text-gray-900 hover:text-gray-700">
+                                    Resume
                                 </a>
                             </div>
                         </div>
