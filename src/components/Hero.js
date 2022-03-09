@@ -58,7 +58,7 @@ export default function Hero() {
                     <div className="text-center">
                         <h1 className="tracking-tight font-extrabold text-gray-900">
                             <span className="block mb-7 md:mb-15 lg:mb-9 text-6xl sm:text-6xl md:text-8xl lg:text-9xl">Hey There!</span>{' '}
-                            <span className="sm:text-5xl md:text-7xl text-4xl lg:text-8xl">I'm <span className="text-indigo-600">Edyta. </span>A <span className="text-indigo-600">Full Stack</span></span>
+                            <span className="sm:text-5xl md:text-7xl text-4xl lg:text-8xl">I'm <span className="text-indigo-600">Edyta</span>. A <span className="text-indigo-600">Full Stack</span></span>
                             <span className="block text-4xl sm:text-5xl md:text-7xl lg:text-8xl"><span className="text-indigo-600">Engineer </span>from Chicago.</span>
                         </h1>
                     </div>
