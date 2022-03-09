@@ -6,6 +6,11 @@ import {
     XIcon,
 } from '@heroicons/react/outline'
 
+const navigation = [
+    { name: 'About', link: 'about' },
+    { name: 'Projects', link: 'projects' },
+    { name: 'Contact', link: 'contact' },
+]
 
 export default function Nav() {
     return (
@@ -35,20 +40,14 @@ export default function Nav() {
 
                     {/* Nav Links */}
                     <Popover.Group as="nav" className="hidden flex md:flex space-x-10">
-                        <button className="text-lg lg:text-2xl font-medium text-gray-500 hover:text-gray-900"><Link to="about" spy={true} smooth={true}>
-                            About
-                        </Link>
-                        </button>
-                        <button className="text-lg lg:text-2xl font-medium text-gray-500 hover:text-gray-900"><Link to="projects" spy={true} smooth={true}>
-                            Projects
-                        </Link>
-                        </button>
-
-                        <button className="text-lg lg:text-2xl font-medium text-gray-500 hover:text-gray-900"><Link to="contact" spy={true} smooth={true}>
-                            Contact
-                        </Link>
-                        </button>
-
+                        {navigation.map((item) => (
+                            <button
+                                key={item.name}
+                                className="text-lg lg:text-2xl font-medium text-gray-500 hover:text-gray-900"
+                            ><Link to={item.link} spy={true} smooth={true}>
+                                    {item.name}
+                                </Link></button>
+                        ))}
                         <a href="https://drive.google.com/file/d/1huJkUqRuymolZx5MM0GxECV45yNlGGoh/view?usp=sharing" rel="noreferrer" target="_blank" className="text-lg lg:text-2xl font-medium text-gray-500 hover:text-gray-900">
                             Resume
                         </a>
@@ -67,52 +66,47 @@ export default function Nav() {
             >
 
                 {/* Inside hamburger */}
-                <Popover.Panel focus className="absolute top-0 inset-x-0 p-2 transition transform origin-top-right md:hidden">
-                    <div className="rounded-lg shadow-lg ring-1 ring-black ring-opacity-5 bg-white divide-y-2 divide-gray-50">
-                        <div className="pt-5 pb-6 px-5">
-                            <div className="flex items-center justify-between">
-
-                                {/* Logo img in hamburger */}
-                                <div>
-                                    <img
-                                        className="h-11 w-auto"
-                                        src="https://user-images.githubusercontent.com/87889660/156454571-818bdf9d-19da-41e4-9c6e-f943ceb60ce9.svg"
-                                        alt="Edyta's logo"
-                                    />
-                                </div>
-
-                                {/* Close hamburger menu */}
-                                <div className="-mr-2">
-                                    <Popover.Button className="bg-white rounded-md p-2 inline-flex items-center justify-center text-gray-400 hover:text-gray-500 hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-inset focus:ring-indigo-500">
-                                        <span className="sr-only">Close menu</span>
-                                        <XIcon className="h-6 w-6" aria-hidden="true" />
-                                    </Popover.Button>
-                                </div>
+                <Popover.Panel
+                    focus
+                    className="absolute z-10 top-0 inset-x-0 p-2 transition transform origin-top-right md:hidden"
+                >
+                    <div className="rounded-lg shadow-md bg-white ring-1 ring-black ring-opacity-5 overflow-hidden">
+                        <div className="px-5 pt-4 flex items-center justify-between">
+                            {/* Logo in hamburger menu */}
+                            <div>
+                                <img
+                                    className="h-8 w-auto"
+                                    src="https://user-images.githubusercontent.com/87889660/156454571-818bdf9d-19da-41e4-9c6e-f943ceb60ce9.svg"
+                                    alt="Edyta's logo"
+                                />
+                            </div>
+                            {/* Close menu button */}
+                            <div className="-mr-2">
+                                <Popover.Button className="bg-white rounded-md p-2 inline-flex items-center justify-center text-gray-400 hover:text-gray-500 hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-inset focus:ring-indigo-500">
+                                    <span className="sr-only">Close menu</span>
+                                    <XIcon className="h-6 w-6" aria-hidden="true" />
+                                </Popover.Button>
                             </div>
                         </div>
-
-                        {/* Nav links inside hamburger */}
-                        <div className="py-6 px-5 space-y-6">
-                            <div className="grid grid-cols-2 gap-y-4 gap-x-8">
-                                <button className="text-base font-medium text-gray-900 hover:text-gray-700"><Link to="about" spy={true} smooth={true}>
-                                    About
-                                </Link>
+                        {/* Nav Links inside hamburger */}
+                        <div className="px-2 pt-2 pb-3">
+                            {navigation.map((item) => (
+                                <button
+                                    key={item.name}
+                                    className="px-3 py-2 rounded-md text-base font-medium text-gray-700 hover:text-gray-900 hover:bg-gray-50"
+                                >
+                                    <Link to={item.link} spy={true} smooth={true}>
+                                        {item.name}
+                                    </Link>
                                 </button>
+                            ))}
 
-                                <button className="text-base font-medium text-gray-900 hover:text-gray-700"><Link to="projects" spy={true} smooth={true}>
-                                    Projects
-                                </Link>
-                                </button>
-
-                                <button className="text-base font-medium text-gray-900 hover:text-gray-700"><Link to="contact" spy={true} smooth={true}>
-                                    Contact
-                                </Link>
-                                </button>
-
-                                <a href="https://drive.google.com/file/d/1huJkUqRuymolZx5MM0GxECV45yNlGGoh/view?usp=sharing" rel="noreferrer" className="text-base font-medium text-gray-900 hover:text-gray-700">
-                                    Resume
-                                </a>
-                            </div>
+                            <a
+                                href="https://drive.google.com/file/d/1huJkUqRuymolZx5MM0GxECV45yNlGGoh/view?usp=sharing" target="_blank"
+                                className="block px-3 py-2 rounded-md text-base font-medium text-gray-700 hover:text-gray-900 hover:bg-gray-50"
+                            >
+                                Resume
+                            </a>
                         </div>
                     </div>
                 </Popover.Panel>
