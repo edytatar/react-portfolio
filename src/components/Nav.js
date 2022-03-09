@@ -102,7 +102,7 @@ export default function Nav() {
                             ))}
 
                             <a
-                                href="https://drive.google.com/file/d/1huJkUqRuymolZx5MM0GxECV45yNlGGoh/view?usp=sharing" target="_blank"
+                                href="https://drive.google.com/file/d/1huJkUqRuymolZx5MM0GxECV45yNlGGoh/view?usp=sharing" target="_blank" rel="noreferrer"
                                 className="block px-3 py-2 rounded-md text-base font-medium text-gray-700 hover:text-gray-900 hover:bg-gray-50"
                             >
                                 Resume
