@@ -22,8 +22,8 @@ export default function About() {
   return (
     <>
       {/* About header */}
-      <div id="about">
-        <div className="bg-white max-w-7xl mx-auto py-10 px-4 sm:py-25 sm:px-6 lg:px-8">
+      <div id="about" className="bg-white">
+        <div className="max-w-7xl mx-auto py-10 px-4 sm:py-25 sm:px-6 lg:px-8">
           <div className="text-center">
             <h2 className="text-base font-semibold text-indigo-600 tracking-wide uppercase">1.</h2>
             <p className="mt-1 text-4xl font-extrabold text-gray-900 sm:text-5xl sm:tracking-tight lg:text-6xl">
@@ -90,7 +90,7 @@ export default function About() {
                   My name is Edyta Tarczynski. In 2020, I graduated from DePaul University with a B.S in Marketing and a Minor in Graphic Design. I currently attend Northwestern University's Full Stack Coding Bootcamp. I finish the program March 2022.
                 </p>
                 <p className="text-lg">
-                  I am passionate about combining my design and coding skills to create innovative solutions for the community.  Creative problem solving and debugging are my jam. I am interested in Front End and Full Stack engineering opportunities.
+                  I am passionate about combining my design and coding skills to create innovative solutions for the community.  Creative problem solving and debugging are my jam. I am interested in Front End and Full Stack and Back End engineering opportunities.
                 </p>
                 <p className="text-lg">
                   Below are a few technologies I have been working with recently:

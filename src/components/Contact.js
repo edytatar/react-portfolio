@@ -2,9 +2,9 @@
 
 export default function Contact() {
     return (
-        <div id="contact">
+        <div id="contact" className="bg-white">
             {/* Contact Header */}
-            <div className="bg-white max-w-7xl mx-auto pt-10 px-4 sm:py-25 sm:px-6 lg:px-8 mt-7">
+            <div className="max-w-7xl mx-auto pt-10 px-4 sm:py-25 sm:px-6 lg:px-8 mt-7">
                 <div className="text-center">
                     <h2 className="text-base font-semibold text-indigo-600 tracking-wide uppercase">3.</h2>
                     <p className="mt-1 text-4xl font-extrabold text-gray-900 sm:text-5xl sm:tracking-tight lg:text-6xl">
