@@ -1,7 +1,7 @@
 const technologies = [
   {
     name: 'Front-end',
-    role: 'HTML, CSS, TailwindCSS, JavaScript, React',
+    role: 'React, JavaScript, TailwindCSS, HTML, CSS',
   },
   {
     name: 'Back-end',
@@ -13,7 +13,7 @@ const technologies = [
   },
   {
     name: 'Tools',
-    role: 'GraphQL and Postman',
+    role: 'Apollo GraphQL, JSON Web Token, Postman',
   },
 ]
 
@@ -106,8 +106,8 @@ export default function About() {
                   >
                     <div className="flex-1 min-w-0">
                         <span className="absolute inset-0" aria-hidden="true" />
-                        <p className="text-sm font-medium text-gray-900">{technology.name}</p>
-                        <p className="text-sm text-gray-500 truncate">{technology.role}</p>
+                        <p className="mb-1 text-sm font-medium text-gray-900">{technology.name}</p>
+                        <p className="text-sm text-gray-500">{technology.role}</p>
                     </div>
                   </div>
                 ))}
