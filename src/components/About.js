@@ -13,7 +13,7 @@ const technologies = [
   },
   {
     name: 'Tools',
-    role: 'Apollo GraphQL, JSON Web Token, Postman',
+    role: 'Jest, Apollo GraphQL, JSON Web Token, Postman',
   },
 ]
 
