@@ -3,8 +3,8 @@ const projects = [
         title: 'Polari',
         links: { name: ['GitHub', 'Live Site'], href: ['https://github.com/polari-2022', 'https://polari-attachments.herokuapp.com/'] },
         description: 'LGBTQ+ attachment style dating web app. Technologies used: React, Tailwind CSS, Node, Express, JSON Web Token, MongoDB, and Apollo GraphQL. ',
-            imageUrl: 'https://user-images.githubusercontent.com/87889660/162030484-0df05927-435a-4272-a86a-b537c06d3942.png',
-            alt: 
+        imageUrl: 'https://user-images.githubusercontent.com/87889660/162030484-0df05927-435a-4272-a86a-b537c06d3942.png',
+        alt:
             'Polari\'s home page image',
     },
     {
@@ -14,8 +14,8 @@ const projects = [
             'Fullstack application whose mission is to provide access to healthy and nutritious food in the local Chicago community. Technologies used: Node, Express, Handlebars, MySQL, and user authentication.',
         imageUrl:
             'https://user-images.githubusercontent.com/87889660/162030948-c6f26c55-1f9d-4f19-b0db-fce06d92fd9e.png',
-        alt: 
-        'NeighborGoods\' home page image',
+        alt:
+            'NeighborGoods\' home page image',
     },
     {
         title: 'Eventube',
@@ -24,7 +24,7 @@ const projects = [
             'This application is a tool for users to find musical events in their local area using Ticketmaster, YouTube, and LocationIQ\'s API. Technologies used: HTML, CSS, and JavaScript.',
         imageUrl:
             'https://user-images.githubusercontent.com/87889660/162030430-33826aeb-b834-46eb-9bac-e5dd8d51bb20.png',
-            alt: 
+        alt:
             'Eventube\'s home page image',
     },
 ]
@@ -50,9 +50,9 @@ export default function Project() {
 
             <div className="mt-12 max-w-lg mx-auto grid gap-5 lg:grid-cols-3 lg:max-w-none px-4" >
                 {projects.map((project) => (
-                    <div key={project.title} className="flex flex-col rounded-lg shadow-lg overflow-hidden">
+                    <div key={project.title} className="flex flex-col rounded-lg shadow-md overflow-hidden hover:shadow-xl">
                         <div className="flex-shrink-0">
-                            <img className="h-48 w-full object-cover" src={project.imageUrl} alt={project.alt}/>
+                            <img className="h-48 w-full object-cover" src={project.imageUrl} alt={project.alt} />
                         </div>
                         <div className="flex-1 bg-white p-6 flex flex-col justify-between">
                             <p className="text-xl font-semibold text-gray-900">{project.title}</p>
