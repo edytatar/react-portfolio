@@ -87,10 +87,10 @@ export default function About() {
               </h2>
               <div className="mt-6 text-gray-500 space-y-6">
                 <p className="text-lg">
-                  My name is Edyta Tarczynski. In 2020, I graduated from DePaul University with a B.S in Marketing and a Minor in Graphic Design. I currently attend Northwestern University's Full Stack Coding Bootcamp. I finish the program March 2022.
+                  I finished Northwestern University's Full Stack Coding Bootcamp in March 2022. In 2020, I graduated from DePaul University with a B.S in Marketing and a Minor in Graphic Design. 
                 </p>
                 <p className="text-lg">
-                  I am passionate about combining my design and coding skills to create innovative solutions for the community.  Creative problem solving and debugging are my jam. I am interested in Front End and Full Stack and Back End engineering opportunities.
+                  I am passionate about combining my design and coding skills to create innovative solutions for the community.  Creative problem solving and debugging are my jam. I am interested in Front End, Back End, and Full Stack engineering opportunities.
                 </p>
                 <p className="text-lg">
                   Below are a few technologies I have been working with recently:

@@ -13,7 +13,7 @@ const projects = [
         description:
             'Fullstack application whose mission is to provide access to healthy and nutritious food in the local Chicago community. Technologies used: Node, Express, Handlebars, MySQL, and user authentication.',
         imageUrl:
-            'https://user-images.githubusercontent.com/87889660/156894032-24ba2083-5e8e-4f25-810d-05272edda330.png',
+            'https://user-images.githubusercontent.com/87889660/162030948-c6f26c55-1f9d-4f19-b0db-fce06d92fd9e.png',
         alt: 
         'NeighborGoods\' home page image',
     },
