@@ -79,7 +79,7 @@ export default function About() {
           </div>
 
           <div className="relative mx-auto max-w-md px-4 sm:max-w-3xl sm:px-6 lg:px-0">
-           
+
             {/* Content area */}
             <div className="pt-12 sm:pt-16 lg:pt-20">
               <h2 className="text-3xl text-gray-900 font-extrabold tracking-tight sm:text-4xl">
@@ -87,7 +87,7 @@ export default function About() {
               </h2>
               <div className="mt-6 text-gray-500 space-y-6">
                 <p className="text-lg">
-                  I finished Northwestern University's Full Stack Coding Bootcamp in March 2022. In 2020, I graduated from DePaul University with a B.S in Marketing and a Minor in Graphic Design. 
+                  I finished Northwestern University's Full Stack Coding Bootcamp in March 2022. In 2020, I graduated from DePaul University with a B.S in Marketing and a Minor in Graphic Design.
                 </p>
                 <p className="text-lg">
                   I am passionate about combining my design and coding skills to create innovative solutions for the community.  Creative problem solving and debugging are my jam. I am interested in Front End, Back End, and Full Stack engineering opportunities.
@@ -102,12 +102,12 @@ export default function About() {
                 {technologies.map((technology, i) => (
                   <div
                     key={i}
-                    className="relative rounded-lg border border-gray-300 bg-white px-6 py-5 shadow-sm flex items-center space-x-3 hover:border-gray-400 focus-within:ring-2 focus-within:ring-offset-2 focus-within:ring-indigo-500"
+                    className="relative rounded-lg border border-gray-300 bg-white px-6 py-5 shadow-sm flex items-center space-x-3 hover:border-indigo-600 focus-within:ring-2 focus-within:ring-offset-2 focus-within:ring-indigo-500"
                   >
                     <div className="flex-1 min-w-0">
-                        <span className="absolute inset-0" aria-hidden="true" />
-                        <p className="mb-1 text-sm font-medium text-gray-900">{technology.name}</p>
-                        <p className="text-sm text-gray-500">{technology.role}</p>
+                      <span className="absolute inset-0" aria-hidden="true" />
+                      <p className="mb-1 text-sm font-medium text-gray-900">{technology.name}</p>
+                      <p className="text-sm text-gray-500">{technology.role}</p>
                     </div>
                   </div>
                 ))}
