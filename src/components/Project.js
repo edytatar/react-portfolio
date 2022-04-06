@@ -1,23 +1,21 @@
 const projects = [
     {
+        title: 'Polari',
+        links: { name: ['GitHub', 'Live Site'], href: ['https://github.com/polari-2022', 'https://polari-attachments.herokuapp.com/'] },
+        description: 'LGBTQ+ attachment style dating web app. Technologies used: React, Tailwind CSS, Node, Express, JSON Web Token, MongoDB, and Apollo GraphQL. ',
+            imageUrl: 'https://user-images.githubusercontent.com/87889660/162030484-0df05927-435a-4272-a86a-b537c06d3942.png',
+            alt: 
+            'Polari\'s home page image',
+    },
+    {
         title: 'NeighborGoods',
         links: { name: ['GitHub', 'Live Site'], href: ['https://github.com/Bread-Winners/NeighborGoods', 'https://bread-winners-neighborgoods.herokuapp.com/'] },
         description:
-            'With NeighborGoods, you can keep track of the food pantries you have visited and write private notes and public reviews. Did that food pantry you visit yesterday have fresh produce? Write a note to yourself so you remember for next time.',
+            'Fullstack application whose mission is to provide access to healthy and nutritious food in the local Chicago community. Technologies used: Node, Express, Handlebars, MySQL, and user authentication.',
         imageUrl:
             'https://user-images.githubusercontent.com/87889660/156894032-24ba2083-5e8e-4f25-810d-05272edda330.png',
         alt: 
         'NeighborGoods\' home page image',
-    },
-    {
-        title: 'Team Profile Manager',
-        links: { name: ['GitHub', 'Live Site'], href: ['https://github.com/edytatar/Team-Profile-Manager', '#'] },
-        description:
-            'This is a Node.js command-line application that collects information about employees on a team and generates an HTML webpage that displays summaries for each individual. The Team Profile Manager is simple to use and builds a convenient location for all team members contact information.',
-        imageUrl:
-            'https://images.unsplash.com/photo-1496128858413-b36217c2ce36?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1679&q=80',
-            alt: 
-            'Team Profile Manager\'s home page image',
     },
     {
         title: 'Eventube',
@@ -25,7 +23,7 @@ const projects = [
         description:
             'This application is a tool for users to find musical events in their local area using Ticketmaster, YouTube, and LocationIQ\'s API. Technologies used: HTML, CSS, and JavaScript.',
         imageUrl:
-            'https://user-images.githubusercontent.com/87889660/156894042-90c8e513-4c86-4baf-a53b-436a6f8450e9.png',
+            'https://user-images.githubusercontent.com/87889660/162030430-33826aeb-b834-46eb-9bac-e5dd8d51bb20.png',
             alt: 
             'Eventube\'s home page image',
     },
@@ -54,7 +52,7 @@ export default function Project() {
                 {projects.map((project) => (
                     <div key={project.title} className="flex flex-col rounded-lg shadow-lg overflow-hidden">
                         <div className="flex-shrink-0">
-                            <img className="h-48 w-full object-cover" src={project.imageUrl} alt="{project.alt}" />
+                            <img className="h-48 w-full object-cover" src={project.imageUrl} alt={project.alt}/>
                         </div>
                         <div className="flex-1 bg-white p-6 flex flex-col justify-between">
                             <p className="text-xl font-semibold text-gray-900">{project.title}</p>
