@@ -68,7 +68,7 @@ export default function Contact() {
                             <input type="hidden" name="form-name" value="contact" />
                             {/* First Name */}
                             <div>
-                                <input type="hidden" name="form-name" value="contact" />
+                                <input type="hidden" name="form-name" value="contact"/>
                                 <label htmlFor="first-name" className="block text-sm font-medium text-gray-700">
                                     First name
                                 </label>
@@ -79,6 +79,7 @@ export default function Contact() {
                                         id="first-name"
                                         autoComplete="given-name"
                                         className="py-3 px-4 block w-full shadow-sm focus:ring-indigo-500 focus:border-indigo-500 border-gray-300 rounded-md"
+                                        required
                                     />
                                 </div>
                             </div>
@@ -94,6 +95,7 @@ export default function Contact() {
                                         id="last-name"
                                         autoComplete="family-name"
                                         className="py-3 px-4 block w-full shadow-sm focus:ring-indigo-500 focus:border-indigo-500 border-gray-300 rounded-md"
+                                        required
                                     />
                                 </div>
                             </div>
@@ -110,6 +112,7 @@ export default function Contact() {
                                         type="email"
                                         autoComplete="email"
                                         className="py-3 px-4 block w-full shadow-sm focus:ring-indigo-500 focus:border-indigo-500 border-gray-300 rounded-md"
+                                        required
                                     />
                                 </div>
                             </div>
@@ -155,6 +158,7 @@ export default function Contact() {
                                         rows={4}
                                         className="py-3 px-4 block w-full shadow-sm focus:ring-indigo-500 focus:border-indigo-500 border border-gray-300 rounded-md"
                                         defaultValue={''}
+                                        required
                                     />
                                 </div>
                             </div>
