@@ -71,11 +71,11 @@ export default function About() {
             <div className="relative mx-auto max-w-md px-4 sm:max-w-3xl sm:px-6 lg:px-0 lg:max-w-none lg:py-20">
               {/* Testimonial card*/}
               <div className="relative pt-64 pb-10 rounded-2xl shadow-xl overflow-hidden">
-                {/* Image of me */}
+                {/* Image of Seattle */}
                 <img
                   className="absolute inset-0 h-full w-full object-cover"
-                  src="https://user-images.githubusercontent.com/87889660/156487594-7b1ea81b-313d-4ffb-863f-ce5c1ea935f9.jpg"
-                  alt="Chicago skyline"
+                  src="https://user-images.githubusercontent.com/87889660/176014925-5fc47e21-4930-4cd6-9664-7bf7019ba565.jpg"
+                  alt="Seattle skyline"
                 />
 
               </div>
