@@ -43,7 +43,7 @@ export default function Nav() {
                         {navigation.map((item) => (
                             <button
                                 key={item.name}
-                                className="text-lg lg:text-2xl font-medium text-gray-500 hover:text-gray-900"
+                                className="text-lg lg:text-2xl font-medium text-gray-500 hover:text-indigo-600"
                             ><Link to={item.link} spy={true} smooth={true}>
                                     {item.name}
                                 </Link></button>
