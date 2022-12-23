@@ -22,7 +22,7 @@ export default function Nav() {
                         <button href="#"><Link to="home" spy={true} smooth={true}>
                             <span className="sr-only">Logo</span>
                             <img
-                                className="h-12 w-auto sm:h-20"
+                                className="h-12 w-auto sm:h-20 transition ease-in-out hover:-translate-y-1 hover:scale-110 duration-300"
                                 src="https://user-images.githubusercontent.com/87889660/156454571-818bdf9d-19da-41e4-9c6e-f943ceb60ce9.svg"
                                 alt="Edyta's logo"
                             />
