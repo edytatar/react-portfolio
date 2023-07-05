@@ -1,3 +1,5 @@
+import { BrowserRouter, Route, Link } from "react-router-dom";
+
 const projects = [
     {
         title: 'Polari',
@@ -9,7 +11,7 @@ const projects = [
     },
     {
         title: 'NeighborGoods',
-        links: { name: ['About Project', 'GitHub', 'Live Site'], href: ['/neighborgoods','https://github.com/Bread-Winners/NeighborGoods', 'https://bread-winners-neighborgoods.herokuapp.com/'] },
+        links: { name: ['About Project', 'GitHub', 'Live Site'], href: ['/neighborgoods', 'https://github.com/Bread-Winners/NeighborGoods', 'https://bread-winners-neighborgoods.herokuapp.com/'] },
         description:
             'Fullstack application whose mission is to provide access to healthy and nutritious food in the local Chicago community. Technologies used: Node, Express, Handlebars, MySQL, and user authentication.',
         imageUrl:
@@ -50,20 +52,20 @@ export default function Project() {
                         </div>
                         <div className="flex justify-evenly ">
                             <span className="text-lg font-medium text-indigo-600 mb-2">
-                                <a href={project.links.href[0]} rel="noreferrer" className="hover:underline" target="_blank">
-                                    {project.links.name[0]}
+                                <li rel="noreferrer" className="hover:underline list-none" target="_blank">
+                                    <Link to={project.links.href[0]}>{project.links.name[0]}</Link>
+                                </li>
+                            </span>
+                            <span className="text-lg font-medium text-indigo-600">
+                                <a href={project.links.href[1]} rel="noreferrer" className="hover:underline" target="_blank">
+                                    {project.links.name[1]}
                                 </a>
                             </span>
-                                <span className="text-lg font-medium text-indigo-600">
-                                    <a href={project.links.href[1]} rel="noreferrer" className="hover:underline" target="_blank">
-                                        {project.links.name[1]}
-                                    </a>
-                                </span>
-                                <span className="text-lg font-medium text-indigo-600">
-                                    <a href={project.links.href[2]} rel="noreferrer" className="hover:underline" target="_blank">
-                                        {project.links.name[2]}
-                                    </a>
-                                </span>
+                            <span className="text-lg font-medium text-indigo-600">
+                                <a href={project.links.href[2]} rel="noreferrer" className="hover:underline" target="_blank">
+                                    {project.links.name[2]}
+                                </a>
+                            </span>
                         </div>
                     </div>
                 ))}
