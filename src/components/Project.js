@@ -16,17 +16,7 @@ const projects = [
             'https://user-images.githubusercontent.com/87889660/162030948-c6f26c55-1f9d-4f19-b0db-fce06d92fd9e.png',
         alt:
             'NeighborGoods\' home page image',
-    },
-    {
-        title: 'Eventube',
-        links: { name: ['GitHub', 'Live Site'], href: ['https://github.com/edytatar/eventube', 'https://edytatar.github.io/eventube/'] },
-        description:
-            'This application is a tool for users to find musical events in their local area using Ticketmaster, YouTube, and LocationIQ\'s API. Technologies used: HTML, CSS, and JavaScript.',
-        imageUrl:
-            'https://user-images.githubusercontent.com/87889660/162030430-33826aeb-b834-46eb-9bac-e5dd8d51bb20.png',
-        alt:
-            'Eventube\'s home page image',
-    },
+    }
 ]
 
 
@@ -48,9 +38,9 @@ export default function Project() {
 
             {/* Project Cards */}
 
-            <div className="mt-12 max-w-lg mx-auto grid gap-5 lg:grid-cols-3 lg:max-w-none px-4" >
+            <div className="mt-12 mx-auto grid gap-10 lg:grid-cols-2 lg:w-2/3 px-4" >
                 {projects.map((project) => (
-                    <div key={project.title} className="flex flex-col rounded-lg shadow-md overflow-hidden hover:shadow-xl">
+                    <div key={project.title} className="flex flex-col rounded-lg shadow-md overflow-hidden hover:shadow-xl hover:-translate-y-1">
                         <div className="flex-shrink-0">
                             <img className="h-48 w-full object-cover" src={project.imageUrl} alt={project.alt} />
                         </div>
