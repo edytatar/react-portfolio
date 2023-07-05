@@ -19,14 +19,13 @@ export default function Nav() {
                 <div className="flex justify-between items-center border-b-2 border-gray-100 py-6 space-between md:space-x-10">
 
                     <div className="flex justify-start lg:w-0 lg:flex-1">
-                        <button href="#"><Link to="home" spy={true} smooth={true}>
+                        <button className="cursor-default">
                             <span className="sr-only">Logo</span>
                             <img
-                                className="h-12 w-auto sm:h-20 transition ease-in-out hover:-translate-y-1 hover:scale-110 duration-300"
+                                className="h-12 w-auto sm:h-20"
                                 src="https://user-images.githubusercontent.com/87889660/156454571-818bdf9d-19da-41e4-9c6e-f943ceb60ce9.svg"
                                 alt="Edyta's logo"
                             />
-                        </Link>
                         </button>
                     </div>
 
