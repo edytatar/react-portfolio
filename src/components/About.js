@@ -5,7 +5,7 @@ const technologies = [
   },
   {
     name: 'Back-end',
-    role: 'Node and Express',
+    role: 'Node, Express, Powershell',
   },
   {
     name: 'Database',
