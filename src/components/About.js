@@ -94,7 +94,7 @@ export default function About() {
                   I am currently a Junior DevOps Engineer at DocuSign. I finished Northwestern University's Full Stack Coding Bootcamp in March 2022. In 2020, I graduated from DePaul University with a B.S in Marketing and a Minor in Graphic Design.
                 </p>
                 <p className="text-lg">
-                  I am passionate about combining my design and coding skills to create innovative solutions for the community.  Creative problem solving and debugging are my jam.
+                  I am passionate about combining my design and coding skills to create innovative solutions for the community. Creative problem solving and debugging are my jam.
                 </p>
                 <p className="text-lg">
                   Below are a few technologies I have been working with recently:
@@ -106,7 +106,7 @@ export default function About() {
                 {technologies.map((technology, i) => (
                   <div
                     key={i}
-                    className="relative w-2/5 rounded-lg border border-gray-300 bg-white px-6 py-5 shadow-sm flex items-center space-x-3 hover:border-indigo-600 focus-within:ring-2 focus-within:ring-offset-2 focus-within:ring-indigo-500 m-3 mb-3"
+                    className="relative w-2/5 rounded-lg border border-indigo-600 bg-white px-6 py-5 shadow-md flex items-center space-x-3 m-3 mb-3"
                   >
                     <div className="flex-1 min-w-0">
                       <span className="absolute inset-0" aria-hidden="true" />
