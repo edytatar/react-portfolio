@@ -1,7 +1,7 @@
 const projects = [
     {
         title: 'Polari',
-        links: { name: ['GitHub', 'Live Site'], href: ['https://github.com/polari-2022', 'https://polari-attachments.herokuapp.com/'] },
+        links: { name: ['About Project', 'GitHub', 'Live Site'], href: ['/polari', 'https://github.com/polari-2022', 'https://polari-attachments.herokuapp.com/'] },
         description: 'LGBTQ+ attachment style dating web app. Technologies used: React, Tailwind CSS, Node, Express, JSON Web Token, MongoDB, and Apollo GraphQL. ',
         imageUrl: 'https://user-images.githubusercontent.com/87889660/162030484-0df05927-435a-4272-a86a-b537c06d3942.png',
         alt:
@@ -9,7 +9,7 @@ const projects = [
     },
     {
         title: 'NeighborGoods',
-        links: { name: ['GitHub', 'Live Site'], href: ['https://github.com/Bread-Winners/NeighborGoods', 'https://bread-winners-neighborgoods.herokuapp.com/'] },
+        links: { name: ['About Project', 'GitHub', 'Live Site'], href: ['/neighborgoods','https://github.com/Bread-Winners/NeighborGoods', 'https://bread-winners-neighborgoods.herokuapp.com/'] },
         description:
             'Fullstack application whose mission is to provide access to healthy and nutritious food in the local Chicago community. Technologies used: Node, Express, Handlebars, MySQL, and user authentication.',
         imageUrl:
@@ -40,7 +40,7 @@ export default function Project() {
 
             <div className="mt-12 mx-auto grid gap-10 lg:grid-cols-2 lg:w-2/3 px-4" >
                 {projects.map((project) => (
-                    <div key={project.title} className="flex flex-col rounded-lg shadow-md overflow-hidden hover:shadow-xl hover:-translate-y-1">
+                    <div key={project.title} className="flex flex-col rounded-lg shadow-md overflow-hidden hover:shadow-lg">
                         <div className="flex-shrink-0">
                             <img className="h-48 w-full object-cover" src={project.imageUrl} alt={project.alt} />
                         </div>
@@ -48,17 +48,22 @@ export default function Project() {
                             <p className="text-xl font-semibold text-gray-900">{project.title}</p>
                             <p className="mt-3 text-base text-gray-500">{project.description}</p>
                         </div>
-                        <div className="flex-1 flex justify-evenly">
-                            <span className="text-lg font-medium text-indigo-600">
+                        <div className="flex justify-evenly ">
+                            <span className="text-lg font-medium text-indigo-600 mb-2">
                                 <a href={project.links.href[0]} rel="noreferrer" className="hover:underline" target="_blank">
                                     {project.links.name[0]}
                                 </a>
                             </span>
-                            <span className="text-lg font-medium text-indigo-600">
-                                <a href={project.links.href[1]} rel="noreferrer" className="hover:underline" target="_blank">
-                                    {project.links.name[1]}
-                                </a>
-                            </span>
+                                <span className="text-lg font-medium text-indigo-600">
+                                    <a href={project.links.href[1]} rel="noreferrer" className="hover:underline" target="_blank">
+                                        {project.links.name[1]}
+                                    </a>
+                                </span>
+                                <span className="text-lg font-medium text-indigo-600">
+                                    <a href={project.links.href[2]} rel="noreferrer" className="hover:underline" target="_blank">
+                                        {project.links.name[2]}
+                                    </a>
+                                </span>
                         </div>
                     </div>
                 ))}
